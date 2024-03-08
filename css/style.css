@@ -28,6 +28,10 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    background: var(--color-primario);
 }
 
 .header__logo {
@@ -70,8 +74,7 @@ body{
     /* background: green; */
     display: flex;
     flex-direction: column;
-    /* height: 120px; */
-    margin-top: 40px;
+    margin-top: 35px;
     justify-content: center;
     padding: 0 0.5em
 }
@@ -166,6 +169,8 @@ progress[value]::-moz-progress-bar {
     padding: 1.5em 0.5em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    position: relative;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     gap: .5em;
@@ -277,6 +282,7 @@ i.bxs-down-arrow{
     background: var(--color-primario);
     position: fixed;
     bottom: 0;
+    z-index: 10;
 }
 
 .footer ul {
