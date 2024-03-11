@@ -15,20 +15,89 @@ body{
     position: relative;
 }
 .banner__container{
-    overflow: hidden;
-    width: 100vw;
     position: absolute;
-    z-index: -10;
+    overflow: hidden;
+    top: -290px;
+    z-index: -100;
     display: grid;
     justify-content: center;
-    top: -290px;
+    width: 100%;
 }
 
-.banner__circle1{
+.banner__fondo{
     background-color: var(--color-primario);
     width: 500px;
     height: 500px;
     border-radius: 100%;
+}
+
+.banner__circles{
+    position: absolute;
+    width: 100vw;
+    overflow: hidden;
+    height: 30vh;
+}
+
+.circles__item1{
+    position: absolute;
+    background-color: var(--color-quinto);
+    top: -130px;
+    left: -60px;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.circles__item2{
+    position: absolute;
+    background-color: var(--color-quinto);
+    top: -45px;
+    left: 205px;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.circles__item3{
+    position: absolute;
+    background-color: var(--color-quinto);
+    top: -120px;
+    right: -60px;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+.circles__item4{
+    position: absolute;
+    background-color: var(--color-quinto);
+    top: 20px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.circles__item5{
+    position: absolute;
+    background-color: var(--color-quinto);
+    bottom: -10px;
+    right: 30px;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+.circles__item6{
+    position: absolute;
+    background-color: var(--color-quinto);
+    bottom: 30px;
+    left: 20px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
 }
 
 .header {
@@ -43,7 +112,7 @@ body{
     z-index: 2;
     top: 0;
     color: var(--color-ternario);
-    background-color: var(--color-primario);
+    /* background-color: var(--color-primario); */
 }
 
 .header__logo {
@@ -87,6 +156,7 @@ body{
     align-items: center;
     height: 200px;
     width: 200px;
+    z-index: 100;
 }
 .totalBalance__circle h2{
     margin: .1em;
@@ -139,7 +209,7 @@ body{
 .main__spending{
     display: flex;
     position: relative;
-    background-color: #00dda21f;
+    background-color: #e1ffef;
     padding: 50px 20px 20px 20px;
     gap: 20px;
 }
@@ -169,22 +239,10 @@ body{
     font-size: 1.3em;
 }
 
-
 .spending__text small{
     color: var(--color-cuarto);
     font-size: 11px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 .footer {
